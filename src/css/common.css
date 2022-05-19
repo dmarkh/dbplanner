@@ -1,0 +1,128 @@
+:root {
+  margin: 0;
+  padding: 0;
+  background: var(--color-primary);
+  color: var(--font-color-light);
+  font-size: var(--font-size-regular);
+  font-family: "Roboto", arial, helvetica;
+  user-select: none;
+}
+
+html, body, #app-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	overflow-x: hidden;
+}
+
+@media screen and (orientation:portrait) {
+	html, body, #app-container {
+  	justify-content: center;
+	}
+}
+@media screen and (orientation:landscape) {
+	html, body, #app-container {
+	  justify-content: flex-start;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+h1 {
+	font-size: var(--font-size-xlarge);
+	margin:  0;
+	padding: 0;
+}
+
+h2 {
+	font-size: var(--font-size-large);
+	margin:  0;
+	padding: 0;
+}
+
+h3 {
+	font-size: var(--font-size-regular);
+	margin:  0;
+	padding: 0;
+}
+
+button, input[type="submit"], input[type="reset"], .smartlink {
+  background: none;
+  background-color: var(--color-secondary);
+  color: var(--font-color-light);
+  text-shadow: 1px 1px var(--font-color-dark);
+  border: none;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  outline: inherit;
+  box-sizing: border-box;
+  border-radius: 0.5vmin;
+  padding: 1vmin;
+  margin: 1vmin;
+}
+
+.smartlink {
+	text-decoration: none;
+	text-shadow: none;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.center-flex-col {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-flex-row {
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-required {
+  border: 0.5vmin solid #F00 !important;
+}
+
+.text-center-row {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.width50 {
+	width: 50 vmin;
+}
+
+.width100p {
+	width: 100%;
+}
+
+.nopad {
+	padding: 0 !important;
+}
+
+.nomargin {
+	margin: 0 !important;
+}
+
+.noborder {
+	border: 0 !important;
+}

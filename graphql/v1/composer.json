@@ -1,0 +1,18 @@
+{
+    "name": "dmarkh/dbplanner-api",
+    "description": "Meeting Planner GraphQL API",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Arkhipkin",
+            "email": "arkhipkin@gmail.com"
+        }
+    ],
+    "require": {
+        "webonyx/graphql-php": "^14.9.0"
+    },
+		"autoload": {
+        "psr-4": {"Service\\": "Service"}
+    }
+}
